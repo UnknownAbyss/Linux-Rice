@@ -1,3 +1,28 @@
 :root{
 	scrollbar-color: rgb(189, 229, 222) rgb(31, 31, 31);
 }
+
+@-moz-document url(about:newtab), url(about:home) {
+	html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
+    	background: #0c0e17 !important;
+	}	
+}
+
+li.top-site-outer {
+	padding: 0px 0px !important;
+	margin: 0px 11px !important;
+	border-radius: 15px;
+}
+
+html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-breakpoint-override main div.body-wrapper.on div.discovery-stream.ds-layout div.ds-column.ds-column-12 div.ds-column-grid div div.ds-top-sites section.collapsible-section.top-sites.animation-enabled div.section-top-bar h3.section-title span.click-target-container span.click-target span{
+	color: #39f !important;
+}
+
+li.top-site-outer *{
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+html body.activity-stream div#root div div.outer-wrapper.ds-outer-wrapper-breakpoint-override main div.body-wrapper.on div.discovery-stream.ds-layout div.ds-column.ds-column-12 div.ds-column-grid div div.ds-top-sites section.collapsible-section.top-sites.animation-enabled div.section-body ul.top-sites-list li.top-site-outer div.top-site-inner a.top-site-button div.title span{
+	color: #AcA;
+}
