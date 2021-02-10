@@ -1,0 +1,42 @@
+:root {
+	--background: #0d021a;
+	--line-col: #49D;
+}
+
+body {
+	background: var(--background);
+	display: flex;
+	height: 100vh;
+}
+
+img {
+	border-radius: 50%;
+	width: calc(1vw + 30px);
+	transition: 0.5s ease;
+}
+
+.reveal {
+	background: rgba(255,255,255,0);
+	margin: auto;
+}
+
+.flex-cont {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: 50%;
+}
+
+.flex-item {
+	width:  calc(1vw + 30px);
+	margin: 0px 30px;
+	transition: 0.5s ease;
+}
+
+.flex-item:hover, .flex-item:hover img {
+	width: calc(8vw + 80px);
+	transition: 0.5s ease;
+	border-radius: 50%;
+}
